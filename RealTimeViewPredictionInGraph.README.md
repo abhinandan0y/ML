@@ -90,6 +90,10 @@ for new_time in range(11, 21):
 
 plt.show()
 ```
+<div style="width: 100%;">
+  <img src="https://raw.githubusercontent.com/abhinandan0y/ML/main/plotly_liveGraph.png" style="width: 100%;" alt="bioinformatics_lab.png">
+</div>
+
 Temperature prediction example:
 
 ```python
@@ -132,3 +136,6 @@ for new_time in range(11, 21):
 
 plt.show()
 ```
+<div style="width: 100%;">
+  <img src="https://raw.githubusercontent.com/abhinandan0y/ML/main/plotly_liveGraph.png" style="width: 100%;" alt="bioinformatics_lab.png">
+</div>
