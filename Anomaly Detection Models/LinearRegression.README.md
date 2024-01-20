@@ -57,3 +57,69 @@ predictions = model.predict(advertising_spend_to_predict)
 
 print(f'Forecasted sales volume based on advertising spend: {predictions}')
 ```
+Predicting the temperature based on time of day:
+```python
+# Import necessary libraries
+import numpy as np
+from sklearn.linear_model import LinearRegression
+import matplotlib.pyplot as plt
+
+# Generate random data for time of day and temperature
+time_of_day = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+temperature = np.array([15, 18, 20, 22, 25, 28, 30, 26, 23, 20])
+
+# Reshape the data to fit the model
+time_of_day = time_of_day.reshape(-1, 1)
+
+# Create a linear regression model
+model = LinearRegression()
+
+# Train the model
+model.fit(time_of_day, temperature)
+
+# Make predictions for a new set of time_of_day
+new_time_of_day = np.array([11, 12, 13]).reshape(-1, 1)
+temperature_predictions = model.predict(new_time_of_day)
+
+# Plot the data and the regression line
+plt.scatter(time_of_day, temperature, color='blue')
+plt.plot(time_of_day, model.predict(time_of_day), color='red', linewidth=2)
+plt.xlabel('Time of Day')
+plt.ylabel('Temperature')
+plt.title('Temperature Prediction based on Time of Day')
+plt.show()
+
+# Output temperature predictions for new_time_of_day
+print("Temperature Predictions for New Time of Day:", temperature_predictions)
+```
+
+Projecting student performance based on study hours:
+```python
+# Generate random data for study hours and student performance
+study_hours = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+student_performance = np.array([50, 60, 70, 80, 85, 90, 92, 95, 98, 100])
+
+# Reshape the data to fit the model
+study_hours = study_hours.reshape(-1, 1)
+
+# Create a linear regression model
+model = LinearRegression()
+
+# Train the model
+model.fit(study_hours, student_performance)
+
+# Make predictions for a new set of study_hours
+new_study_hours = np.array([11, 12, 13]).reshape(-1, 1)
+performance_predictions = model.predict(new_study_hours)
+
+# Plot the data and the regression line
+plt.scatter(study_hours, student_performance, color='blue')
+plt.plot(study_hours, model.predict(study_hours), color='red', linewidth=2)
+plt.xlabel('Study Hours')
+plt.ylabel('Student Performance')
+plt.title('Student Performance Projection based on Study Hours')
+plt.show()
+
+# Output performance predictions for new_study_hours
+print("Performance Predictions for New Study Hours:", performance_predictions)
+```
