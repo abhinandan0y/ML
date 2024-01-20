@@ -1,6 +1,6 @@
 # ML <br/>
 
-Q:what models are there in machine learning?
+Q:What models are there in machine learning?
 
 Each model is designed to address specific types of problems or tasks:
 
