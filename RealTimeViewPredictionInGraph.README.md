@@ -3,7 +3,6 @@ Q:How to view real time machine learning predictions in a line graph?
 Real-time stock price prediction
 
 ```python
-
 import numpy as np
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
@@ -35,7 +34,7 @@ fig, ax = plt.subplots()
 for new_time in range(11, 21):
     price_prediction = model.predict(np.array([new_time]).reshape(-1, 1))
     prices = np.append(prices, price_prediction)
-    update_plot(model, time_points[:len(prices)], prices, ax)
+    update_plot(model, np.arange(1, len(prices) + 1), prices, ax)  # Fix here
     time.sleep(1)
 
 plt.show()
