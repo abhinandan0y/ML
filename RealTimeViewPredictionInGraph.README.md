@@ -137,5 +137,5 @@ for new_time in range(11, 21):
 plt.show()
 ```
 <div style="width: 100%;">
-  <img src="https://raw.githubusercontent.com/abhinandan0y/ML/main/plotly_liveGraph.png" style="width: 100%;" alt="bioinformatics_lab.png">
+  <img src="https://github.com/abhinandan0y/ML/blob/main/images/Screenshot%20from%202024-01-20%2016-59-09.png" style="width: 100%;" alt="bioinformatics_lab.png">
 </div>
