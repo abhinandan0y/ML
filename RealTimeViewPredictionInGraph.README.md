@@ -43,7 +43,6 @@ plt.show()
 Temperature prediction example:
 
 ```python
-
 import numpy as np
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
@@ -52,19 +51,13 @@ import time
 # Function to update and plot real-time predictions
 def update_plot(model, time_of_day, temperature, ax):
     ax.clear()
-
-    # Plot the original data
     ax.scatter(time_of_day, temperature, color='blue', label='Actual Temperature')
-
-    # Plot the regression line
     ax.plot(time_of_day, model.predict(time_of_day.reshape(-1, 1)), color='red', label='Regression Line')
-
     ax.set_xlabel('Time of Day')
     ax.set_ylabel('Temperature')
-    ax.set_title('Real-time Temperature Prediction based on Time of Day')
+    ax.set_title('Real-time Temperature Prediction')
     ax.legend()
-
-    plt.pause(0.1)  # Pause for a short duration to allow the plot to update
+    plt.pause(0.1)
 
 # Generate initial data for time of day and temperature
 time_of_day = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
@@ -84,10 +77,8 @@ fig, ax = plt.subplots()
 for new_time in range(11, 21):
     temperature_prediction = model.predict(np.array([new_time]).reshape(-1, 1))
     temperature = np.append(temperature, temperature_prediction)
-
-    # Update and plot in real-time
-    update_plot(model, time_of_day[:len(temperature)], temperature, ax)
-    time.sleep(1)  # Pause for a second before the next update
+    update_plot(model, np.arange(1, len(temperature) + 1), temperature, ax)  # Fix here
+    time.sleep(1)
 
 plt.show()
 ```
