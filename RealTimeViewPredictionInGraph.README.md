@@ -46,6 +46,7 @@ for new_time in range(11, 21):
     fig.update_traces(marker=dict(size=8))
     time.sleep(1)
 ```
+https://raw.githubusercontent.com/abhinandan0y/ML/main/plotly_liveGraph.png
 Real-time stock price prediction
 
 ```python
