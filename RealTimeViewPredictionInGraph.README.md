@@ -46,7 +46,11 @@ for new_time in range(11, 21):
     fig.update_traces(marker=dict(size=8))
     time.sleep(1)
 ```
-https://raw.githubusercontent.com/abhinandan0y/ML/main/plotly_liveGraph.png
+
+<div style="width: 100%;">
+  <img src="[https://www.bioinformaticsfuture.com/images/bioinformatics_lab.png](https://raw.githubusercontent.com/abhinandan0y/ML/main/plotly_liveGraph.png)" style="width: 100%;" alt="bioinformatics_lab.png">
+</div>
+
 Real-time stock price prediction
 
 ```python
