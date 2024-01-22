@@ -14,14 +14,14 @@ Support Vector Machines (SVM)
 K-Nearest Neighbors (KNN)
 Naive Bayes
 Neural Networks
-Feedforward Neural Networks
-Multilayer Perceptrons (MLP)
+ i) Feedforward Neural Networks
+ ii) Multilayer Perceptrons (MLP)
 Gradient Boosting Machines
-XGBoost
-LightGBM
-CatBoost
-Ridge Regression
-Lasso Regression
+ i) XGBoost: widely used for structured/tabular data.
+ ii) LightGBM: efficient for large datasets.
+ iii) CatBoost:  for categorical features.
+Ridge Regression: useful for preventing overfitting.
+Lasso Regression: Identifying important features.
 ```
 Unsupervised Learning Models:
 ```python
